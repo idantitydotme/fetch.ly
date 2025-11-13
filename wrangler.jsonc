@@ -1,10 +1,5 @@
 {
 	"name": "fetch-dot-ly",
-	"routes": [
-		{
-			"pattern": "fetch-dot-ly.idantity.workers.dev"
-		}
-	],
 	"observability": {
 		"logs": {
 			"enabled": true,
