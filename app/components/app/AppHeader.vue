@@ -177,7 +177,7 @@ defineShortcuts(extractShortcuts(accountMenuItems.value))
               :handle="false"
               :ui="{
                 header: 'flex items-center justify-between',
-                content: 'w-full max-w-2/3 rounded-none'
+                content: 'w-full max-w-2/3 rounded-none bg-white'
               }"
             >
               <UButton
@@ -185,14 +185,19 @@ defineShortcuts(extractShortcuts(accountMenuItems.value))
                 variant="ghost"
                 icon="lucide:menu"
                 @click="leftDrawerOpen = true"
+                class="text-black hover:text-white"
               />
               <template #header>
-                <RCLogo variant="mark" class="h-6 w-auto" />
+                <UIcon
+                  name="first-party:logomark-white"
+                  class="h-6 w-auto fill-black text-black"
+                />
                 <UButton
                   color="neutral"
                   variant="ghost"
                   icon="lucide:x"
                   @click="leftDrawerOpen = false"
+                  class="text-black hover:text-white"
                 />
               </template>
               <template #body>
@@ -201,6 +206,9 @@ defineShortcuts(extractShortcuts(accountMenuItems.value))
                     :items="items"
                     variant="link"
                     orientation="vertical"
+                    :ui="{
+                      link: 'text-black hover:text-primary text-lg'
+                    }"
                   />
                 </div>
               </template>
@@ -218,7 +226,7 @@ defineShortcuts(extractShortcuts(accountMenuItems.value))
               :handle="false"
               :ui="{
                 header: 'flex items-center justify-between',
-                content: 'w-full max-w-2/3 rounded-none'
+                content: 'w-full max-w-2/3 rounded-none bg-white'
               }"
             >
               <UButton
@@ -226,44 +234,26 @@ defineShortcuts(extractShortcuts(accountMenuItems.value))
                 variant="ghost"
                 icon="lucide:user"
                 @click="rightDrawerOpen = true"
+                class="text-black hover:text-white"
               />
               <template #header>
-                <UUser
-                  v-if="session"
-                  size="md"
-                  :avatar="{
-                    src: session?.user.image ?? '',
-                    alt: session?.user.name ?? ''
-                  }"
-                  :name="session?.user.name"
-                  :description="`#${session?.user.tag}`"
-                  :ui="{ description: 'text-left' }"
-                />
-                <div v-else />
                 <UButton
                   color="neutral"
                   variant="ghost"
                   icon="lucide:x"
                   @click="rightDrawerOpen = false"
+                  class="text-black hover:text-white"
                 />
               </template>
               <template #body>
                 <div class="flex flex-col gap-md">
-                  <template v-if="session">
-                    <UNavigationMenu
-                      orientation="vertical"
-                      :items="accountMenuItems"
-                    />
-                  </template>
-                  <template v-else>
-                    <UButton
-                      variant="solid"
-                      :label="t('auth_sign-in')"
-                      to="/auth/sign-in"
-                      @click="rightDrawerOpen = false"
-                      block
-                    />
-                  </template>
+                  <UButton
+                    variant="solid"
+                    label="Schedule a Call"
+                    icon="lucide:phone"
+                    to="/intake"
+                    block
+                  />
                 </div>
               </template>
             </UDrawer>
