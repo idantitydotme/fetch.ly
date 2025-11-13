@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { type ButtonProps } from "@nuxt/ui"
-
 const iconPool: { icon: string; href: string; iconClass?: string }[] = [
   { icon: "logos:typescript-icon", href: "https://www.typescriptlang.org/" },
   { icon: "logos:vue", href: "https://vuejs.org/" },
@@ -315,12 +313,16 @@ useSeoMeta({
     <UContainer class="py-16">
       <div class="flex flex-col gap-lg lg:grid lg:grid-cols-2">
         <div class="flex flex-col gap-md">
-          <span class="font-semibold text-black">COLLABORATION</span>
+          <span class="font-semibold text-black">FAQ</span>
           <h2 class="text-4xl font-semibold text-black lg:text-hero">
-            Our seamless collaboration process
+            See if we have what you need.
           </h2>
+          <p class="text-black">
+            Have questions? We’ve got answers. If you don’t see yours, reach out
+            below.
+          </p>
           <div class="flex flex-row gap-md pt-4">
-            <UButton label="View our process" />
+            <UButton label="Contact" to="/intake" />
           </div>
         </div>
         <UAccordion
