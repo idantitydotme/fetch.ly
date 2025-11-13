@@ -92,7 +92,7 @@ const columns: FooterColumn[] = [
       <span class="order-last flex-1 text-sm text-black lg:order-first">
         © {{ new Date().getFullYear() }} Fetchly Labs. All rights reserved.
       </span>
-      <div class="flex flex-col gap-sm lg:flex-row">
+      <div class="flex flex-col gap-md lg:flex-row">
         <ULink to="/documents/terms-of-service" class="text-black underline"
           >Privacy Policy</ULink
         >

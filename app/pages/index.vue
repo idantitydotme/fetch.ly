@@ -157,7 +157,6 @@ useSeoMeta({
               variant="soft"
               type="email"
               placeholder="Enter your email"
-              class="sm:w-80"
             />
             <UButton
               variant="solid"
@@ -238,7 +237,7 @@ useSeoMeta({
             :description="feature.description"
             :ui="{
               leadingIcon:
-                'lg:size-16 size-12 rounded-2xl bg-primary-500 fill-black p-sm lg:p-md text-black transition-all duration-300 hover:rounded-full',
+                'lg:size-16 size-12 rounded-2xl bg-primary-500 fill-black p-sm lg:p-md text-black transition-all hover:rounded-full',
               title: 'text-2xl font-semibold text-black',
               description: 'text-lg text-black'
             }"
@@ -273,7 +272,7 @@ useSeoMeta({
               item: 'gap-xl',
               separator: 'bg-primary-500',
               indicator:
-                'lg:size-16 size-12 rounded-2xl bg-primary-500 fill-black p-sm lg:p-md text-black transition-all duration-300 hover:rounded-full',
+                'lg:size-16 size-12 rounded-2xl bg-primary-500 fill-black p-sm lg:p-md text-black transition-all hover:rounded-full',
               title: 'text-black text-lg font-semibold',
               description: 'text-black text-md'
             }"
@@ -281,7 +280,7 @@ useSeoMeta({
         </div>
       </div>
     </UContainer>
-    <UContainer class="py-16">
+    <UContainer class="bg-white py-16">
       <div
         class="flex flex-col gap-xl rounded-[48px] bg-black p-16 lg:grid lg:grid-cols-2 lg:flex-row"
       >
