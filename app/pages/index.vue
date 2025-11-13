@@ -167,44 +167,46 @@ useSeoMeta({
         </div>
       </div>
     </div>
-    <UContainer class="bg-primary-100 py-16">
-      <div class="flex flex-col gap-xl lg:grid lg:grid-cols-2">
-        <div class="flex flex-col gap-md">
-          <h2 class="text-4xl font-bold text-black lg:text-hero">
-            We help build eCommerce brands
-          </h2>
-          <span class="text-md font-semibold text-black lg:text-lg">
-            WE BUILD AND MANAGE THE TECHNICAL SIDE, SO YOU CAN FOCUS ON RUNNING
-            YOUR BRAND.
-          </span>
-          <p class="text-black">
-            We strategize, design, build, test, launch, and manage custom online
-            stores, all at a low, month-to-month price. From UX to backend,
-            every site and app we build is meticulously optimized to drive
-            revenue.
-          </p>
-          <div class="flex flex-row gap-sm">
-            <UButton label="Talk to us" to="/intake" />
-            <UButton
-              variant="link"
-              label="Learn more"
-              trailing-icon="lucide:chevron-right"
-              to="/intake"
-              class="text-black"
+    <div class="bg-primary-100 py-16">
+      <UContainer>
+        <div class="flex flex-col gap-xl lg:grid lg:grid-cols-2">
+          <div class="flex flex-col gap-md">
+            <h2 class="text-4xl font-bold text-black lg:text-hero">
+              We help build eCommerce brands
+            </h2>
+            <span class="text-md font-semibold text-black lg:text-lg">
+              WE BUILD AND MANAGE THE TECHNICAL SIDE, SO YOU CAN FOCUS ON
+              RUNNING YOUR BRAND.
+            </span>
+            <p class="text-black">
+              We strategize, design, build, test, launch, and manage custom
+              online stores, all at a low, month-to-month price. From UX to
+              backend, every site and app we build is meticulously optimized to
+              drive revenue.
+            </p>
+            <div class="flex flex-row gap-sm">
+              <UButton label="Talk to us" to="/intake" />
+              <UButton
+                variant="link"
+                label="Learn more"
+                trailing-icon="lucide:chevron-right"
+                to="/intake"
+                class="text-black"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-between gap-md">
+            <img
+              src="https://cdn.prod.website-files.com/67ffae2d1339b7cb15a88bb6/68484fa7c89b39d4cc57435c_casper.com_.avif"
+              width="352"
+              height="647"
+              alt="Illustration"
+              class="w-full rounded-lg"
             />
           </div>
         </div>
-        <div class="flex flex-col justify-between gap-md">
-          <img
-            src="https://cdn.prod.website-files.com/67ffae2d1339b7cb15a88bb6/68484fa7c89b39d4cc57435c_casper.com_.avif"
-            width="352"
-            height="647"
-            alt="Illustration"
-            class="w-full rounded-lg"
-          />
-        </div>
-      </div>
-    </UContainer>
+      </UContainer>
+    </div>
     <UContainer class="bg-white py-16">
       <div class="flex flex-col gap-xl">
         <div class="flex flex-col gap-xl lg:grid lg:grid-cols-2">
