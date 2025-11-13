@@ -1,13 +1,8 @@
 {
-	"name": "idantity-dot-me",
+	"name": "fetch-dot-ly",
 	"routes": [
 		{
-			"pattern": "idantity.me",
-			"custom_domain": true
-		},
-		{
-			"pattern": "www.idantity.me",
-			"custom_domain": true
+			"pattern": "fetch-dot-ly.idantity.workers.dev"
 		}
 	],
 	"observability": {
@@ -16,12 +11,5 @@
 			"head_sampling_rate": 1,
 			"invocation_logs": true
 		}
-	},
-	"hyperdrive": [
-		{
-			"binding": "HYPERDRIVE",
-			"id": "82741a7bfa2140e09a413a2821bfa1b3",
-			"remote": true
-		}
-	]
+	}
 }
