@@ -298,7 +298,11 @@ useSeoMeta({
             DTC Brand.
           </p>
           <div class="flex flex-col gap-md lg:flex-row">
-            <UButton color="neutral" variant="solid" label="View our model" />
+            <UButton
+              color="neutral"
+              variant="solid"
+              label="Check our services"
+            />
             <UButton
               color="neutral"
               variant="link"
