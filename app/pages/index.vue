@@ -247,7 +247,7 @@ useSeoMeta({
             }"
           />
         </div>
-        <UMarquee :overlay="false" class="z-100 py-16">
+        <UMarquee :overlay="false" class="py-16">
           <ULink to="/" v-for="i in 12">
             <UIcon
               name="lucide:globe"
