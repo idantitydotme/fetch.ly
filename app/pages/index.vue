@@ -156,7 +156,9 @@ useSeoMeta({
             <UInput
               variant="soft"
               type="email"
+              size="lg"
               placeholder="Enter your email"
+              class="w-64 lg:w-96"
             />
             <UButton
               variant="solid"
