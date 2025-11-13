@@ -52,7 +52,7 @@ const columns: FooterColumn[] = [
         <div
           class="flex max-w-5/7 flex-col items-center justify-between gap-xl lg:items-start"
         >
-          <UIcon name="first-party:logomark-white" class="h-6 w-auto" />
+          <UIcon name="first-party:logomark-white" class="h-12 w-auto" />
           <h2 class="text-6xl font-normal">
             Ready to build something amazing?
           </h2>

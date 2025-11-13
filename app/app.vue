@@ -55,7 +55,7 @@ useSeoMeta({
       <NuxtPage />
     </NuxtLayout>
     <ClientOnly>
-      <RCScrollToTop class="p-12" />
+      <RCScrollToTop />
     </ClientOnly>
   </UApp>
 </template>

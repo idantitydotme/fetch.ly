@@ -3,7 +3,9 @@
 <template>
   <div class="bg-white">
     <IDAppHeader />
-    <slot />
+    <UMain>
+      <slot />
+    </UMain>
     <LazyIDAppFooter hydrate-on-visible />
   </div>
 </template>
